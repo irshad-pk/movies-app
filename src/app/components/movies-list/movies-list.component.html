@@ -1,0 +1,16 @@
+<div class="container">
+    <!-- No data message -->
+    <p *ngIf="Movies.length <= 0" class="no-data text-center">There is no movie added yet!</p>
+
+    <div *ngIf="Movies.length > 0" class="movie-card-list">
+        <div class="movie-card" *ngFor="let movie of Movies; let i = index">
+          <img src="https://via.placeholder.com/200">
+          <div class="movie-card-details">
+            <div>Name: {{movie.name}}</div>
+            <div>Description: {{movie.description}}</div>
+            <div>Director: {{movie.director}}</div>
+          </div>
+        </div>
+    </div>
+
+  </div>

@@ -1,0 +1,42 @@
+<div class="container">
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="inputName">Name</label>
+      <input class="form-control" type="text" formControlName="name" />
+      <div
+        class="invalid-feedback"
+        *ngIf="submitted && myForm.name.errors?.required"
+      >
+        Name is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputName">Description</label>
+      <input class="form-control" type="text" formControlName="description" />
+      <div
+        class="invalid-feedback"
+        *ngIf="submitted && myForm.name.errors?.required"
+      >
+        Description is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputName">Director</label>
+      <input class="form-control" type="text" formControlName="director" />
+      <div
+        class="invalid-feedback"
+        *ngIf="submitted && myForm.name.errors?.required"
+      >
+        Director is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" type="submit">
+        Add
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+.movies-container {
+    width: 100%;
+    height: 100%;
+}
+.movies-name {
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+.movies-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.movies-menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #ea4130;
+}

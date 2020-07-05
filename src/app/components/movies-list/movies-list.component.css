@@ -1,0 +1,21 @@
+.container {
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: 20px 30px;
+}
+.movie-card-list {
+    display: flex;
+    align-items: center;
+}
+.movie-card {
+    border: 1px solid #fc2222;
+    margin: 20px;
+    border-radius: 10px;
+    height: 280px;
+    overflow: hidden;
+    width: 200px;
+}
+.movie-card-details {
+    padding: 10px 15px;
+}
